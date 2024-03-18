@@ -39,12 +39,15 @@ Para iniciar este gerenciamento o seguinte objetivo deve ser alcançados ao real
 1- Executar uma filtragem e retornar os usuários que foram enviados por uma base de clientes. Para ser um usuário válido, é necessário possuir um nome, data de nascimento menor que 1996(Mais Velhos), um e-mail válido e estar desativado, pois usuários ativos não são úteis para o usuário que está querendo essas informações e colhendo feedbacks de usuários que deixaram a plataforma. Para essa filtragem, crie um endpoint do tipo GET e retorne uma lista contendo os usuários e a soma dos usuários retornados.
 
 Exemplo de resposta:
+```
 {
     list_user: [],
     user_total: number
 }
+```
 
 ##Base de dados explicada>Caminho>App/Database/Database.js
+```
 {
     name: "",//nome do usuario
     birth_data: "",//data de nascimento
@@ -52,7 +55,7 @@ Exemplo de resposta:
     created_at: ""//data de criacao
     is_active: true, //saber se o usuario esta ativo ou nao
 }
-
+```
 
 ##Instrução final
 -Queremos entender como sua mente funciona, então tente se sentir o mais avontade possivel, caso queira buscar uma agua, cafe ou ir ao banheiro, sem problema algum, o processo aqui é mais importante que o resultado final.
